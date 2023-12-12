@@ -65,6 +65,8 @@ app.post("/login" , async(req , res)=>{
     }
 })
 
+
+
 app.get('/charts',authentication, async(req, res) => {
     try {
         const chart = await Chart.findAll()

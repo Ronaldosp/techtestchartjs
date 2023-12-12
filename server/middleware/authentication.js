@@ -5,7 +5,7 @@ async function authentication(req , res , next){
     try {
         let verify = verifyToken(req.headers.access_token)
         let user = await User.findByPk(verify.id)
-        if(!user){
+        if(!user || !verify){
             throw {message : `Unauthenticated`}
         }
         req.user={id:user.id , email:user.email}
