@@ -15,9 +15,6 @@ module.exports = {
       revenueLost: {
         type: Sequelize.INTEGER
       },
-      customerLost: {
-        type: Sequelize.INTEGER
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

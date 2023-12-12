@@ -15,8 +15,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Chart.init({
     month: DataTypes.STRING,
-    revenueLost: DataTypes.INTEGER,
-    customerLost: DataTypes.INTEGER
+    revenueLost: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Chart',
