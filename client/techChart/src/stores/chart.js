@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
-const baseUrl = "http://localhost:3000"
-// const baseUrl = "https://chart.ronaldosp.online"
+// const baseUrl = "http://localhost:3000"
+const baseUrl = "https://chart.ronaldosp.online"
 
 export const useChartStore = defineStore('chart',{
   state(){
